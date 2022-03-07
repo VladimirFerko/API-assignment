@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block content %} {% endblock %}</title>
+    <link rel = "stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+
+<body>
+    <ul class="nav-items">
+        <li><a href="/">Home</a></li>
+        <li><a href="/create">Create a post</a></li>
+        <li><a href="/show">Show a post</a></li>
+        <li><a href="/modify">Modify the post</a></li>
+    </ul>
+    <section  class="main">
+        <h1>{% block header %} {% endblock %}</h1>
+    </section>
+
+</body>
+  
+
+</html>

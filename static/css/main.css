@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.main{
+    text-align: center;
+}
+.nav-items{
+    background-color: #5463FF;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 15px 25px;
+}
+.nav-items li{
+    text-align: center;
+    width: 15%;
+}
+.nav-items li a{
+    color: white;
+    text-decoration: none;
+}

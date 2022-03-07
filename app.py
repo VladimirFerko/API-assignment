@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
@@ -27,10 +27,22 @@ class Posts(db.Model):
 
 # the first base page
 @app.route('/')
-def base():
+def home():
     return render_template('index.html')
+
+@app.route('/create')
+def create():
+    return render_template('create.html')
+
+@app.route('/modify')
+def modify():
+    return render_template('modify.html')
+
+@app.route('/show')
+def show():
+    return render_template('show.html')
 
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug = True)
