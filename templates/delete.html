@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content%}  {% endblock %}
+
+
+{% block body %}
+<h2>Here you can delete the post</h2>
+
+<form action = "" method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.id_post() }}
+    {{ form.modify() }}
+</form>
+
+{% endblock %}

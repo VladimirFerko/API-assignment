@@ -1,3 +1,19 @@
 {% extends 'base.html' %}
 {% block content %}Show posts {% endblock %} 
-{% block header %}Here you can see some posts{% endblock %}
+
+
+{% block body %}
+<h2>Show posts</h2>
+<h4>Enter the id of the post</h4>
+<form action = "" method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.id_post() }}
+    {{ form.submit() }}
+</form>
+
+
+<h3>{{title}}</h3>
+
+
+
+{% endblock %}

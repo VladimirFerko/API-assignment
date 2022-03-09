@@ -1,3 +1,18 @@
 {% extends "base.html" %}
 {% block content %}Modify the post{% endblock %}
-{% block header %} Here you can modify the post {% endblock %}
+
+
+
+{% block body %}
+<h2>Here you can modify the post</h2>
+
+
+<form action = "" method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.id_post() }}
+    {{ form.modify() }}
+</form>
+
+<p> {{print}} </p>
+
+{% endblock %}

@@ -1,3 +1,22 @@
 {% extends "base.html" %}
 {% block content %}Create Post{% endblock %}
-{% block header %} Here you can create a post {% endblock %}
+
+{% block body %}
+<h2>Create a post</h2>
+<form action = "" method = "POST">
+    {{ form.hidden_tag() }}
+    <p>User ID:</p>
+    {{ form.user_id() }}
+    <br>
+    <p>Title:</p>
+
+    {{ form.title() }}
+    <br>
+    <p>Body:</p>
+    {{ form.body() }}
+    <br>
+    {{ form.submit() }}
+    <br>
+</form>
+<p>{{data}}</p>
+{% endblock %}
